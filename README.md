@@ -1,4 +1,4 @@
-DevOps Lab
+# DevOps Lab
 
 This repository documents my complete DevOps engineering journey.
 
