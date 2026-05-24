@@ -1,4 +1,4 @@
-Devops lab
+DevOps Lab
 
 This repository documents my complete DevOps engineering journey.
 
@@ -26,4 +26,4 @@ This repository documents my complete DevOps engineering journey.
 - Learn DevOps practically
 - Build production-style infrastructure
 - Learn automation and CI/CD
-- Integrate AI into DevOps workflows# devops-lab
+- Integrate AI into DevOps workflows
