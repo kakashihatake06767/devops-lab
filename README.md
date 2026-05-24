@@ -1,4 +1,4 @@
-# AI-Enhanced DevOps Lab
+Devops lab
 
 This repository documents my complete DevOps engineering journey.
 
