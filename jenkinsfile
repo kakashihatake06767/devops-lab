@@ -3,17 +3,13 @@ pipeline {
 
     stages {
 
-        stage('Repository Check') {
-            steps {
-                sh 'pwd'
-                sh 'ls -la'
-            }
-        }
-
-        stage('Docker Check') {
+        stage('Deploy To App Server') {
             steps {
                 sh '''
-                ssh dhrupal@192.168.109.52 "docker ps"
+                ssh dhrupal@192.168.109.52 "
+                cd ~/devops-labs/flask-mysql &&
+                docker compose ps
+                "
                 '''
             }
         }
