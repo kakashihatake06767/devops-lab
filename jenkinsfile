@@ -3,16 +3,18 @@ pipeline {
 
     stages {
 
-        stage('Hello DevOps') {
-            steps {
-                echo 'Jenkins Pipeline is working!'
-            }
-        }
-
         stage('Repository Check') {
             steps {
                 sh 'pwd'
                 sh 'ls -la'
+            }
+        }
+
+        stage('SSH To App Server') {
+            steps {
+                sh '''
+                ssh dhrupal@192.168.109.52 hostname
+                '''
             }
         }
 
