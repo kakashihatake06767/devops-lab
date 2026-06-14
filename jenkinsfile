@@ -10,10 +10,10 @@ pipeline {
             }
         }
 
-        stage('SSH To App Server') {
+        stage('Docker Check') {
             steps {
                 sh '''
-                ssh dhrupal@192.168.109.52 hostname
+                ssh dhrupal@192.168.109.52 "docker ps"
                 '''
             }
         }
