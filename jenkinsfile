@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Hello DevOps') {
+            steps {
+                echo 'Jenkins Pipeline is working!'
+            }
+        }
+
+        stage('Repository Check') {
+            steps {
+                sh 'pwd'
+                sh 'ls -la'
+            }
+        }
+
+    }
+}
