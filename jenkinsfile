@@ -3,6 +3,13 @@ pipeline {
 
     stages {
 
+        stage('Repository Check') {
+            steps {
+                sh 'pwd'
+                sh 'ls -la'
+            }
+        }
+
         stage('Deploy To App Server') {
             steps {
                 sh '''
