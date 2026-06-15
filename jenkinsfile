@@ -3,13 +3,12 @@ pipeline {
 
     stages {
 
-        stage('Deploy To App Server') {
+        stage('Deploy To AWS App Server') {
             steps {
                 sh '''
-                ssh dhrupal@192.168.109.52 "
-                cd ~/devops-labs/flask-mysql &&
-                docker compose down &&
-                docker compose up -d --build
+                ssh ubuntu@16.16.67.222 "
+                cd ~/devops-lab &&
+                git pull
                 "
                 '''
             }
